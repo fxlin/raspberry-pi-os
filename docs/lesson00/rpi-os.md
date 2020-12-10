@@ -177,6 +177,17 @@ raspi2               Raspberry Pi 2
 raspi3               Raspberry Pi 3
 ```
 
+Confirm you have the GNU C compiler for the arm64 architecture
+
+```
+which aarch64-linux-gnu-gcc
+```
+
+If the arm64 compiler isn't found (no response from terminal), install the compiler
+```
+sudo apt-get install gcc-aarch64-linux-gnu
+```
+
 Test QEMU with Rpi3 baremetal code
 
 ```
